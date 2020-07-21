@@ -1,6 +1,6 @@
-# Welcome to MkDocs
+# 안녕하세요!
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+readthedocs로 만든 내용 정리 사이트를 github에 올리는걸 실험해 보려고 작성하였습니다.
 
 ## Commands
 
