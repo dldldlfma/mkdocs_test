@@ -8,7 +8,7 @@
   <meta name="description" content="None">
   
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>안녕하세요! - My Docs</title>
+  <title>mkdocs test - My Docs</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
   <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "\uc548\ub155\ud558\uc138\uc694!";
+    var mkdocs_page_name = "mkdocs test";
     var mkdocs_page_input_path = "index.md";
     var mkdocs_page_url = null;
   </script>
@@ -56,7 +56,7 @@
     
     <li class="navtree toctree-l1 page current">
       <a class="current" href=".">
-        안녕하세요!
+        mkdocs test
       </a>
     </li>
     
@@ -69,7 +69,12 @@
     
       
         <li class="toctree-l2">
-          <a class="toctree-l3" href="#commands">Commands</a>
+          <a class="toctree-l3" href="#_1">사용명령</a>
+        </li>
+    
+      
+        <li class="toctree-l2">
+          <a class="toctree-l3" href="#github-deploy">github-deploy</a>
         </li>
     
       
@@ -105,7 +110,7 @@
     
       
     
-    <li>안녕하세요!</li>
+    <li>mkdocs test</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -115,22 +120,61 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="_1">안녕하세요!</h1>
-<p>readthedocs로 만든 내용 정리 사이트를 github에 올리는걸 실험해 보려고 작성하였습니다.
-두번째 테스트 수정후에 push하면 잘되나?</p>
+                <h1 id="mkdocs-test">mkdocs test</h1>
+<p>readthedocs로 만든 내용 정리 사이트를 github에 올리는걸 실험해 보려고 작성하였습니다.</p>
 <script src="https://ads-partners.coupang.com/g.js"></script>
 
 <script>
     new PartnersCoupang.G({ id:282019 });
 </script>
 
-<h2 id="commands">Commands</h2>
+<h2 id="_1">사용명령</h2>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li><code>mkdocs new [dir-name]</code> - mkdocs 프로젝트를 만들때 사용합니다.</li>
+<li><code>mkdocs serve</code> - 현재 컴퓨터를 서버로 하여 mkdocs를 보여줍니다.</li>
+<li><code>mkdocs build</code> - documentation site를 build합니다..</li>
+<li><code>mkdocs -h</code> - help message를 보여줍니다.</li>
+<li><code>mkdocs gh-deploy</code> - github에 연결된 repo에 본 사이트를 업로드합니다.</li>
 </ul>
+<h2 id="github-deploy">github-deploy</h2>
+<p>github에 deploy를 하게되면 github.io 사이트를 통해서 자신이 작성한 mkdocs를 웹상에서 볼수 있게 해줍니다.</p>
+<p>예를 들어서 현재 제 id가 dldldlfma 인데 </p>
+<p>repo 이름을 mkdocs_test로 했다면</p>
+<pre><code class="bash">mkdocs gh-deploy
+</code></pre>
+
+<p>위 명령이 정상 실행됬을때</p>
+<p>현재 작성된 mkdocs를</p>
+<p>https://dldldlfma.github.io/mkdocs_test</p>
+<p>에서 볼 수 있다는 뜻입니다.</p>
+<hr />
+<p>위 작업은 아래와 같은 순서로 진행됩니다.</p>
+<ol>
+<li>mkdocs 프로젝트를 만들고 작성한다.</li>
+</ol>
+<pre><code>mkdocs new my_prj
+</code></pre>
+
+<p>위와 같이 하면된다.</p>
+<ol>
+<li>
+<p>github 에 repo를 만들고 github와 연동한다.</p>
+</li>
+<li>
+<p>현재 만들어져 있는 mkdocs 프로젝트 폴더에서 git init를 친다.  </p>
+</li>
+<li>
+<p>github에 repository를 만들고 mkdocs 프로젝트 폴더에서 git remote로 해당 repo를 연결한다.</p>
+</li>
+<li>
+<p>mkdocs gh-deploy 를 수행한다.</p>
+</li>
+</ol>
+<pre><code>mkdocs gh-deploy
+</code></pre>
+
+<hr />
+<p>위 3단계의 과정을 거치면 작성한 repo를 github.io에서 확인할 수 있게 됩니다.</p>
 <h2 id="project-layout">Project layout</h2>
 <pre><code>mkdocs.yml    # The configuration file.
 docs/
@@ -176,5 +220,5 @@ docs/
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2020-07-22 04:19:22.683368+00:00
+Build Date UTC : 2020-07-22 06:13:53.900489+00:00
 -->
